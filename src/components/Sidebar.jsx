@@ -28,7 +28,7 @@ export default function Sidebar({
       {/* Header */}
       <div className={styles.header}>
         <span className={styles.title}>Vault Explorer</span>
-        <span className={styles.stats}>{totalFolders}F · {totalFiles}f</span>
+        <span className={styles.stats}>{totalFolders}Folders · {totalFiles}files</span>
       </div>
 
       {/* Tree */}
@@ -57,18 +57,6 @@ export default function Sidebar({
             />
           ))
         )}
-      </div>
-
-      {/* Footer: storage usage */}
-      <div className={styles.footer}>
-        <div className={styles.usageRow}>
-          <span className={styles.usageLabel}>Storage used</span>
-          <span className={styles.usageLabel}>{USED_GB} GB / {TOTAL_STORAGE} GB</span>
-        </div>
-        <div className={styles.usageBar} role="progressbar" aria-valuenow={USED_PCT} aria-valuemin={0} aria-valuemax={100} aria-label="Storage usage">
-          <div className={styles.usageFill} style={{ width: `${USED_PCT}%` }} />
-        </div>
-        <span className={styles.usagePct}>{USED_PCT}% used</span>
       </div>
 
       {/* Keyboard hints */}
