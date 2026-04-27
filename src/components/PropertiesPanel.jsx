@@ -44,7 +44,6 @@ export default function PropertiesPanel({
         {!node ? (
           <>
             <div className={styles.noSelection} aria-label="No file selected">
-              <span className={styles.noSelIcon} aria-hidden="true">🔍</span>
               <p className={styles.noSelText}>Select a file or folder to view its properties</p>
             </div>
 

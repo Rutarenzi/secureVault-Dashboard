@@ -15,9 +15,7 @@ export default function TopBar({
     <header className={styles.topbar} role="banner">
       {/* Brand */}
       <div className={styles.brand}>
-        <div className={styles.brandIcon} aria-hidden="true">SV</div>
         <span className={styles.brandName}>SecureVault</span>
-        <span className={styles.brandTag}>Enterprise</span>
       </div>
 
       <div className={styles.divider} />
@@ -52,10 +50,6 @@ export default function TopBar({
 
       {/* Actions */}
       <div className={styles.actions}>
-        <div className={styles.statusGroup} aria-label="Vault status">
-          <span className={styles.statusDot} aria-hidden="true" />
-          <span className={styles.statusText}>ENCRYPTED · LIVE</span>
-        </div>
         <div className={styles.divider} />
         <button className={styles.actionBtn} onClick={collapseAll} title="Collapse all folders">
           ⊖ Collapse All

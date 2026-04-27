@@ -88,7 +88,6 @@ export default function MainPanel({
       <div className={styles.content}>
         {!folderNode ? (
           <div className={styles.welcome} aria-label="Welcome state">
-            <span className={styles.welcomeIcon} aria-hidden="true">🔐</span>
             <p className={styles.welcomeText}>Select a file or folder to explore</p>
             <p className={styles.welcomeSub}>Use keyboard ↑↓ to navigate or click the tree</p>
           </div>
@@ -130,7 +129,6 @@ export default function MainPanel({
 
             {folders.length === 0 && files.length === 0 && (
               <div className={styles.welcome}>
-                <span className={styles.welcomeIcon} aria-hidden="true">📭</span>
                 <p className={styles.welcomeText}>This folder is empty</p>
               </div>
             )}

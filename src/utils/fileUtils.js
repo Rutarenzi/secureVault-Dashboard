@@ -7,34 +7,9 @@ export function getExtension(name) {
 
 export function getFileIcon(name, type) {
   if (type === 'folder') return '📁'
-  const ext = getExtension(name)
-  const map = {
-    pdf:       '📄',
-    png:       '🖼️',
-    jpg:       '🖼️',
-    jpeg:      '🖼️',
-    svg:       '🎨',
-    docx:      '📝',
-    doc:       '📝',
-    xlsx:      '📊',
-    xls:       '📊',
-    txt:       '📋',
-    log:       '📋',
-    yaml:      '⚙️',
-    yml:       '⚙️',
-    json:      '🗂️',
-    ttf:       '🔤',
-    otf:       '🔤',
-    gitignore: '🔧',
-    md:        '📖',
-    js:        '📜',
-    jsx:       '📜',
-    ts:        '📜',
-    tsx:       '📜',
-    css:       '🎨',
-    html:      '🌐',
-  }
-  return map[ext] || '📄'
+
+ 
+  return '📄'
 }
 
 export function getFileType(name) {
